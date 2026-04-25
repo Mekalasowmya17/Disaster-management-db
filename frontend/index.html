@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Relief Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <h1>Relief Tracker</h1>
+</nav>
+
+<div class="container">
+
+  <div class="card">
+    <h2>Report Disaster</h2>
+    <form id="form">
+      <input type="text" id="type" placeholder="Type" required>
+      <input type="text" id="location" placeholder="Location" required>
+
+      <select id="severity">
+        <option value="">Severity</option>
+        <option>Low</option>
+        <option>Medium</option>
+        <option>High</option>
+      </select>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <div class="card">
+    <h2>Reports</h2>
+    <div id="list"></div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
